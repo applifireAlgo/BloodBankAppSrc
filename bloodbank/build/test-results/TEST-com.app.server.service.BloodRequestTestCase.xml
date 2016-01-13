@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.app.server.service.BloodRequestTestCase" tests="5" skipped="0" failures="0" errors="0" timestamp="2016-01-12T12:41:59" hostname="bef48ae51ba4" time="0.294">
+  <properties/>
+  <testcase name="test1Save" classname="com.app.server.service.BloodRequestTestCase" time="0.146"/>
+  <testcase name="test2Update" classname="com.app.server.service.BloodRequestTestCase" time="0.041"/>
+  <testcase name="test3FindById" classname="com.app.server.service.BloodRequestTestCase" time="0.009"/>
+  <testcase name="test3findBybloodGroup" classname="com.app.server.service.BloodRequestTestCase" time="0.007"/>
+  <testcase name="test4Delete" classname="com.app.server.service.BloodRequestTestCase" time="0.09"/>
+  <system-out><![CDATA[In around repository aspect
+[EL Fine]: sql: 2016-01-12 12:41:59.49--ClientSession(227938535)--Connection(1728808874)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_BloodGroup_M (bloodGroupId, bloodGroup, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind => [E656B848-6A8D-444B-8A18-B3B6929F5E91, xksjYo7tPwmj8VLUHwI7eX16jAWtgmyFScIPmmzBq7MpoDoeWo, 1, AAAAA, 2016-01-12 12:41:59.486, null, 2016-01-12 12:41:59.486, 1, null]
+Setting logged in user info for ADD
+In around repository aspect
+[EL Fine]: sql: 2016-01-12 12:41:59.565--ClientSession(1694065742)--Connection(1728808874)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_BloodRequest_T (bloodRequestId, bloodGroup, dateNeededBy, dispatchedToPatientOnDT, noOfUnits, patientName, requestedByDoctor, requestedByHospital, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind => [443C878B-94B9-4F0C-82F7-1CBEC869885F, E656B848-6A8D-444B-8A18-B3B6929F5E91, 1970-01-02 10:17:36.789, 1970-01-02 10:17:36.789, 559, pBu0Enk6gqKjMBYKxhovCj1GM9nrJyQZPwImmlLeV1ckMprPEn, aPe7twmXqUDZB596b751sKHG5qwz3vD1yBTKPqcDNNpsj0Dh62, jcwQTto44w8wapZntALU72JAOOosnXKokoPFXikR6fcyxzNnQ2, 1, AAAAA, 2016-01-12 12:41:59.523, null, 2016-01-12 12:41:59.523, 1, null]
+In around repository aspect
+[EL Fine]: sql: 2016-01-12 12:41:59.619--ClientSession(1912342534)--Connection(1728808874)--Thread(Thread[Test worker,5,main])--SELECT bloodRequestId, bloodGroup, dateNeededBy, dispatchedToPatientOnDT, noOfUnits, patientName, requestedByDoctor, requestedByHospital, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_BloodRequest_T WHERE ((activeStatus = ?) AND (bloodRequestId = ?))
+	bind => [1, 443C878B-94B9-4F0C-82F7-1CBEC869885F]
+Setting logged in user info for UPDATE
+In around repository aspect
+[EL Fine]: sql: 2016-01-12 12:41:59.623--ClientSession(2110664379)--Connection(1728808874)--Thread(Thread[Test worker,5,main])--SELECT bloodRequestId, bloodGroup, dateNeededBy, dispatchedToPatientOnDT, noOfUnits, patientName, requestedByDoctor, requestedByHospital, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_BloodRequest_T WHERE (bloodRequestId = ?)
+	bind => [443C878B-94B9-4F0C-82F7-1CBEC869885F]
+[EL Fine]: sql: 2016-01-12 12:41:59.625--ClientSession(2110664379)--Connection(1728808874)--Thread(Thread[Test worker,5,main])--UPDATE ast_BloodRequest_T SET dateNeededBy = ?, dispatchedToPatientOnDT = ?, noOfUnits = ?, patientName = ?, requestedByDoctor = ?, requestedByHospital = ?, updatedBy = ?, versionId = ? WHERE ((bloodRequestId = ?) AND (versionId = ?))
+	bind => [1970-01-02 10:17:36.789, 1970-01-02 10:17:36.789, 978, vu2NL8SI8EeTpTqizkXiSDzVEAopAD6hTK3k8UVU0pUAMOrwcD, itCSmDINWK0ax4V3yqPa2MCrxCt7V3mGGZFy2Qa3uGUXr8ZoBX, MKufMSt06Qwinvh9MYXhy3CS4hGs3Z4B4XwNV7zhvPZoLFE7yA, AAAAA, 2, 443C878B-94B9-4F0C-82F7-1CBEC869885F, 1]
+In around repository aspect
+[EL Fine]: sql: 2016-01-12 12:41:59.663--ClientSession(1595761685)--Connection(1728808874)--Thread(Thread[Test worker,5,main])--SELECT bloodRequestId, bloodGroup, dateNeededBy, dispatchedToPatientOnDT, noOfUnits, patientName, requestedByDoctor, requestedByHospital, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_BloodRequest_T WHERE ((activeStatus = ?) AND (bloodRequestId = ?))
+	bind => [1, 443C878B-94B9-4F0C-82F7-1CBEC869885F]
+In around repository aspect
+[EL Fine]: sql: 2016-01-12 12:41:59.671--ClientSession(1315040069)--Connection(1728808874)--Thread(Thread[Test worker,5,main])--SELECT bloodRequestId, bloodGroup, dateNeededBy, dispatchedToPatientOnDT, noOfUnits, patientName, requestedByDoctor, requestedByHospital, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_BloodRequest_T WHERE ((activeStatus = ?) AND (bloodGroup = ?))
+	bind => [1, E656B848-6A8D-444B-8A18-B3B6929F5E91]
+In around repository aspect
+[EL Fine]: sql: 2016-01-12 12:41:59.679--ClientSession(1317499528)--Connection(1728808874)--Thread(Thread[Test worker,5,main])--SELECT bloodRequestId, bloodGroup, dateNeededBy, dispatchedToPatientOnDT, noOfUnits, patientName, requestedByDoctor, requestedByHospital, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_BloodRequest_T WHERE (bloodRequestId = ?)
+	bind => [443C878B-94B9-4F0C-82F7-1CBEC869885F]
+[EL Fine]: sql: 2016-01-12 12:41:59.681--ClientSession(1317499528)--Connection(1728808874)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_BloodRequest_T WHERE ((bloodRequestId = ?) AND (versionId = ?))
+	bind => [443C878B-94B9-4F0C-82F7-1CBEC869885F, 2]
+In around repository aspect
+[EL Fine]: sql: 2016-01-12 12:41:59.732--ClientSession(1504495746)--Connection(1728808874)--Thread(Thread[Test worker,5,main])--SELECT bloodGroupId, bloodGroup, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_BloodGroup_M WHERE (bloodGroupId = ?)
+	bind => [E656B848-6A8D-444B-8A18-B3B6929F5E91]
+[EL Fine]: sql: 2016-01-12 12:41:59.734--ClientSession(1504495746)--Connection(1728808874)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_BloodGroup_M WHERE ((bloodGroupId = ?) AND (versionId = ?))
+	bind => [E656B848-6A8D-444B-8A18-B3B6929F5E91, 1]
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.app.server.service.DistrictTestCase" tests="7" skipped="0" failures="0" errors="0" timestamp="2016-01-12T12:41:58" hostname="bef48ae51ba4" time="0.442">
+  <properties/>
+  <testcase name="test1Save" classname="com.app.server.service.DistrictTestCase" time="0.144"/>
+  <testcase name="test2Update" classname="com.app.server.service.DistrictTestCase" time="0.075"/>
+  <testcase name="test3FindById" classname="com.app.server.service.DistrictTestCase" time="0.005"/>
+  <testcase name="test3findBycountryId" classname="com.app.server.service.DistrictTestCase" time="0.007"/>
+  <testcase name="test3findByregionId" classname="com.app.server.service.DistrictTestCase" time="0.007"/>
+  <testcase name="test3findBystateId" classname="com.app.server.service.DistrictTestCase" time="0.006"/>
+  <testcase name="test4Delete" classname="com.app.server.service.DistrictTestCase" time="0.196"/>
+  <system-out><![CDATA[In around repository aspect
+[EL Fine]: sql: 2016-01-12 12:41:58.018--ClientSession(1523021025)--Connection(1728808874)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_Country_M (countryId, capital, capitalLatitude, capitalLongitude, countryCode1, countryCode2, countryFlag, countryName, currencyCode, currencyName, currencySymbol, isoNumeric, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind => [5CD9276B-239B-4B76-A592-B9047840D509, tThtQNjz8ynnHOuBmZfy67crYYB8waq0, 1, 2, Foh, S3q, QB6ABOInI7wtjyEC6OQCQHrzmsiXA5BMp2cKxzDRKuGCPAbRd3, 5zh5gWvxJ0e2qt5iLMHEXYgD6MZDSOv2V68vQtJKfDBgbfnSlS, rnA, VLeiMha46zcWEiMfcIWqJqge9TeNfm9IPCzKKVxL5SwIXdSaiq, eZkfWSGbB7vYSgOIFblKj93Vtg3tC8Fc, 6, 1, AAAAA, 2016-01-12 12:41:58.013, null, 2016-01-12 12:41:58.013, 1, null]
+In around repository aspect
+[EL Fine]: sql: 2016-01-12 12:41:58.052--ClientSession(455154053)--Connection(1728808874)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_State_M (stateId, countryId, stateCapital, stateCapitalLatitude, stateCapitalLongitude, stateCode, stateCodeChar2, stateCodeChar3, stateDescription, stateFlag, stateName, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind => [671CFF1D-C846-4737-A9FA-9B1F7CE1B475, 5CD9276B-239B-4B76-A592-B9047840D509, A1DU7qRO4Yr1vGJgKPI0vFH6hl3oPJ9EuiSq8pSZrERSnXOG80, 5, 9, 0, LGDzM3JwN7YMrT9YlK9p0FSXyu6uFB2Z, iHEXG5qTm9kwuSVoGGO91AhAudzL65C4, MgS3AkmDZSUalpbhtXAyd11AFKjNrzX805L2Fj0SfvkGhsAb8E, xcpKMyTCv8yEFAUHfaehcYNGd1qGGxjTCUjp6gqpurfoHtjJqf, 6hbjy5z54MgrU1LFttTh3WlCkHiKnPfpkBvrW2n8LbqDH15joG, 1, AAAAA, 2016-01-12 12:41:58.047, null, 2016-01-12 12:41:58.047, 1, null]
+In around repository aspect
+[EL Fine]: sql: 2016-01-12 12:41:58.084--ClientSession(1927957004)--Connection(1728808874)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_Region_M (regionId, countryId, regionCode1, regionCodeChar2, regionDescription, regionFlag, regionLatitude, regionLongitude, regionName, stateId, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind => [CBAB7989-3778-4286-8EDC-ED04C2384710, 5CD9276B-239B-4B76-A592-B9047840D509, 3, yCbhzwts9N90sYUvTjXb0TgioHRfWxxQ, eMkBHnxzebRgTkIiPK51RcEMKRL2GWJVY8YiG31D4i619CwZ2I, iWZjbvvFZGEyU7eLJeIArUUbzLOCcQXGTDAA5sUOKJYSruX0EP, 7, 0, v9YbieLVAZRYIW9YDveWcLdYJEgeesp5eR2j8Ajh5KSwLmrOMk, 671CFF1D-C846-4737-A9FA-9B1F7CE1B475, 1, AAAAA, 2016-01-12 12:41:58.047, null, 2016-01-12 12:41:58.047, 1, null]
+Setting logged in user info for ADD
+In around repository aspect
+[EL Fine]: sql: 2016-01-12 12:41:58.119--ClientSession(1133214036)--Connection(1728808874)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_District_M (districtId, code2, countryId, districtDescription, districtFlag, districtLatitude, districtLongitude, Name, regionId, stateId, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind => [CC3738A4-A3D8-4D91-8A0C-D09D5B63D651, perlOBkJ6POQ2J8uoOxe1DxQFbm00ZkV, 5CD9276B-239B-4B76-A592-B9047840D509, fUWUFiNy98bQnmaaWnJJFVCPkybNoo4dnhRt8FU8R7rQZTQ4j0, EMlrYapIYPArxomaNvXyZXnoJEAb7N3PljnU3E5sgV8nPvbrIA, 4, 11, 4vZYqpcMv2RmJWumfVHgiSZe1bRlmrZYZNqMX7PQRPJr0MIvX0, CBAB7989-3778-4286-8EDC-ED04C2384710, 671CFF1D-C846-4737-A9FA-9B1F7CE1B475, 1, AAAAA, 2016-01-12 12:41:58.112, null, 2016-01-12 12:41:58.112, 1, null]
+In around repository aspect
+[EL Fine]: sql: 2016-01-12 12:41:58.149--ClientSession(123525181)--Connection(1728808874)--Thread(Thread[Test worker,5,main])--SELECT districtId, code2, countryId, districtDescription, districtFlag, districtLatitude, districtLongitude, Name, regionId, stateId, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_District_M WHERE ((activeStatus = ?) AND (districtId = ?))
+	bind => [1, CC3738A4-A3D8-4D91-8A0C-D09D5B63D651]
+Setting logged in user info for UPDATE
+In around repository aspect
+[EL Fine]: sql: 2016-01-12 12:41:58.152--ClientSession(1150645179)--Connection(1728808874)--Thread(Thread[Test worker,5,main])--SELECT districtId, code2, countryId, districtDescription, districtFlag, districtLatitude, districtLongitude, Name, regionId, stateId, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_District_M WHERE (districtId = ?)
+	bind => [CC3738A4-A3D8-4D91-8A0C-D09D5B63D651]
+[EL Fine]: sql: 2016-01-12 12:41:58.154--ClientSession(1150645179)--Connection(1728808874)--Thread(Thread[Test worker,5,main])--UPDATE ast_District_M SET code2 = ?, districtDescription = ?, districtFlag = ?, districtLatitude = ?, districtLongitude = ?, Name = ?, updatedBy = ?, versionId = ? WHERE ((districtId = ?) AND (versionId = ?))
+	bind => [dOpWnDblCHrAYuuVSFeSz2meepQe47hE, UcHGFiQeQzwvJJjlOfNGy53EyzkinlcqgoDojQ2XdXoXlEvVR6, 5DJGqioYP2pUXVF6rGsfnUtYU2WDMgItEbJJJ3SCK7bHsyD7lQ, 2, 4, YgBriBtljyf7HePv7gsg8mCX0X884gCTWcHZQhFf0Twi5aHNrJ, AAAAA, 2, CC3738A4-A3D8-4D91-8A0C-D09D5B63D651, 1]
+In around repository aspect
+[EL Fine]: sql: 2016-01-12 12:41:58.224--ClientSession(760864942)--Connection(1728808874)--Thread(Thread[Test worker,5,main])--SELECT districtId, code2, countryId, districtDescription, districtFlag, districtLatitude, districtLongitude, Name, regionId, stateId, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_District_M WHERE ((activeStatus = ?) AND (districtId = ?))
+	bind => [1, CC3738A4-A3D8-4D91-8A0C-D09D5B63D651]
+In around repository aspect
+[EL Fine]: sql: 2016-01-12 12:41:58.231--ClientSession(1709895335)--Connection(1728808874)--Thread(Thread[Test worker,5,main])--SELECT districtId, code2, countryId, districtDescription, districtFlag, districtLatitude, districtLongitude, Name, regionId, stateId, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_District_M WHERE ((activeStatus = ?) AND (countryId = ?))
+	bind => [1, 5CD9276B-239B-4B76-A592-B9047840D509]
+In around repository aspect
+[EL Fine]: sql: 2016-01-12 12:41:58.239--ClientSession(1822903008)--Connection(1728808874)--Thread(Thread[Test worker,5,main])--SELECT districtId, code2, countryId, districtDescription, districtFlag, districtLatitude, districtLongitude, Name, regionId, stateId, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_District_M WHERE ((activeStatus = ?) AND (regionId = ?))
+	bind => [1, CBAB7989-3778-4286-8EDC-ED04C2384710]
+In around repository aspect
+[EL Fine]: sql: 2016-01-12 12:41:58.245--ClientSession(2130998108)--Connection(1728808874)--Thread(Thread[Test worker,5,main])--SELECT districtId, code2, countryId, districtDescription, districtFlag, districtLatitude, districtLongitude, Name, regionId, stateId, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_District_M WHERE ((activeStatus = ?) AND (stateId = ?))
+	bind => [1, 671CFF1D-C846-4737-A9FA-9B1F7CE1B475]
+In around repository aspect
+[EL Fine]: sql: 2016-01-12 12:41:58.251--ClientSession(265401542)--Connection(1728808874)--Thread(Thread[Test worker,5,main])--SELECT districtId, code2, countryId, districtDescription, districtFlag, districtLatitude, districtLongitude, Name, regionId, stateId, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_District_M WHERE (districtId = ?)
+	bind => [CC3738A4-A3D8-4D91-8A0C-D09D5B63D651]
+[EL Fine]: sql: 2016-01-12 12:41:58.253--ClientSession(265401542)--Connection(1728808874)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_District_M WHERE ((districtId = ?) AND (versionId = ?))
+	bind => [CC3738A4-A3D8-4D91-8A0C-D09D5B63D651, 2]
+In around repository aspect
+[EL Fine]: sql: 2016-01-12 12:41:58.324--ClientSession(444068516)--Connection(1728808874)--Thread(Thread[Test worker,5,main])--SELECT regionId, countryId, regionCode1, regionCodeChar2, regionDescription, regionFlag, regionLatitude, regionLongitude, regionName, stateId, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Region_M WHERE (regionId = ?)
+	bind => [CBAB7989-3778-4286-8EDC-ED04C2384710]
+[EL Fine]: sql: 2016-01-12 12:41:58.326--ClientSession(444068516)--Connection(1728808874)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_Region_M WHERE ((regionId = ?) AND (versionId = ?))
+	bind => [CBAB7989-3778-4286-8EDC-ED04C2384710, 1]
+In around repository aspect
+[EL Fine]: sql: 2016-01-12 12:41:58.357--ClientSession(205180316)--Connection(1728808874)--Thread(Thread[Test worker,5,main])--SELECT stateId, countryId, stateCapital, stateCapitalLatitude, stateCapitalLongitude, stateCode, stateCodeChar2, stateCodeChar3, stateDescription, stateFlag, stateName, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_State_M WHERE (stateId = ?)
+	bind => [671CFF1D-C846-4737-A9FA-9B1F7CE1B475]
+[EL Fine]: sql: 2016-01-12 12:41:58.359--ClientSession(205180316)--Connection(1728808874)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_State_M WHERE ((stateId = ?) AND (versionId = ?))
+	bind => [671CFF1D-C846-4737-A9FA-9B1F7CE1B475, 1]
+In around repository aspect
+[EL Fine]: sql: 2016-01-12 12:41:58.39--ClientSession(645070868)--Connection(1728808874)--Thread(Thread[Test worker,5,main])--SELECT countryId, capital, capitalLatitude, capitalLongitude, countryCode1, countryCode2, countryFlag, countryName, currencyCode, currencyName, currencySymbol, isoNumeric, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Country_M WHERE (countryId = ?)
+	bind => [5CD9276B-239B-4B76-A592-B9047840D509]
+[EL Fine]: sql: 2016-01-12 12:41:58.393--ClientSession(645070868)--Connection(1728808874)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_Country_M WHERE ((countryId = ?) AND (versionId = ?))
+	bind => [5CD9276B-239B-4B76-A592-B9047840D509, 1]
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

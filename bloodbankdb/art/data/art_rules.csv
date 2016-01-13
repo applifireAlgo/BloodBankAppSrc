@@ -1,0 +1,47 @@
+cb5be4d3-9018-439c-ab92-89d4de7454f6#appfire#StockUpdate#appfire#<?xml version="1.0" encoding="UTF-8" standalone="yes"?>\
+<package name="bloodbankboundedcontext.bloodbank" xmlns="http://drools.org/drools-5.2">\
+    <import name="com.app.shared.bloodbank.DonorVisit"/>\
+    <import name="com.app.shared.bloodbank.ClinicalInfo"/>\
+    <import name="com.app.shared.bloodbank.BloodStock"/>\
+    <rule name="UpdateStock">\
+        <rule-attribute name="no-loop" value="true"/>\
+        <lhs>\
+            <pattern identifier="donorvisit_0" object-type="com.app.shared.bloodbank.DonorVisit">\
+                <expr>( getDonorVisitId() != null )</expr>\
+            </pattern>\
+            <pattern identifier="clinicalInfo" object-type="com.app.shared.bloodbank.ClinicalInfo">\
+                <expr>( getClinicalInfoId() != null )</expr>\
+                <from>\
+                    <expression>donorvisit_0.clinicalInfo</expression>\
+                </from>\
+            </pattern>\
+            <pattern identifier="bloodstock_2" object-type="com.app.shared.bloodbank.BloodStock">\
+                <expr>( getBloodStockId() != null )</expr>\
+            </pattern>\
+        </lhs>\
+        <rhs>	\
+	bloodstock_2.setNoOfUnits(java.lang.Integer.valueOf(bloodstock_2.getNoOfUnits()+clinicalInfo.getUnitsOfBlood()));\
+	update(bloodstock_2);\
+	\
+	com.app.shared.bloodbank.BloodResult	bloodresult_3	=	 new com.app.shared.bloodbank.BloodResult();\
+	bloodresult_3.setCollectedDate(new java.sql.Timestamp(java.util.Calendar.getInstance().getTime().getTime()));\
+	bloodresult_3.setDonor(java.lang.String.valueOf(donorvisit_0.getDonor()));\
+	bloodresult_3.setDonorVisit(java.lang.String.valueOf(donorvisit_0.getDonorVisitId()));\
+	bloodresult_3.setIsTested(java.lang.Boolean.valueOf(true));\
+	bloodresult_3.setNoOfUnits(java.lang.Integer.valueOf(clinicalInfo.getUnitsOfBlood()));\
+	bloodresult_3.setExpirydate(new java.sql.Timestamp(java.util.Calendar.getInstance().getTime().getTime()+864000000));\
+	insert(bloodresult_3);\
+</rhs>\
+    </rule>\
+    <query name="retrivebloodstock_2">\
+        <lhs>\
+            <pattern field-name="bloodstock_2" identifier="bloodstock_2" object-type="com.app.shared.bloodbank.BloodStock"/>\
+        </lhs>\
+    </query>\
+    <query name="retrivebloodresult_3">\
+        <lhs>\
+            <pattern field-name="bloodresult_3" identifier="bloodresult_3" object-type="com.app.shared.bloodbank.BloodResult"/>\
+        </lhs>\
+    </query>\
+</package>\
+#appfire#18D01ABF-F632-496A-B379-FC50EDEAB8C0#appfire#2016-01-08 16:20:43#appfire#18D01ABF-F632-496A-B379-FC50EDEAB8C0#appfire#2016-01-08 16:20:43#appfire#1#appfire#1#appfire#ATFYFQO0G7U2897NZHRUCQ#appfire#1

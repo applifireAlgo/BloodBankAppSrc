@@ -1,0 +1,4 @@
+DROP TABLE IF EXISTS `ast_RegisterACamp_T`;
+
+CREATE TABLE `ast_RegisterACamp_T` ( `registerACampId` VARCHAR(256) NOT NULL, `organisationName` VARCHAR(256) NOT NULL, `reasonForCamp` VARCHAR(256) NOT NULL, `bloodBankName` VARCHAR(256) NOT NULL, `fromDate` DATETIME NOT NULL, `toDate` DATETIME NOT NULL, `noOfDonorsExpected` INT(10) NOT NULL, `noOfDonorsThatArrived` INT(10) NOT NULL, `noOfDonorsThatBled` INT(10) NOT NULL, `campTime` VARCHAR(256) NOT NULL, `address` VARCHAR(64) NOT NULL, `createdBy` VARCHAR(64) NULL DEFAULT '-1', `createdDate` DATETIME NULL DEFAULT '1900-01-01', `updatedBy` VARCHAR(64) NULL DEFAULT '-1', `updatedDate` DATETIME NULL DEFAULT '1900-01-01', `versionId` INT(11) NULL DEFAULT '-1', `activeStatus` INT(1) NULL DEFAULT '1', `txnAccessCode` INT(11) NULL DEFAULT NULL, PRIMARY KEY (`registerACampId`));
+

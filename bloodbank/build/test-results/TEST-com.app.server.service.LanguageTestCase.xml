@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.app.server.service.LanguageTestCase" tests="4" skipped="0" failures="0" errors="0" timestamp="2016-01-12T12:41:59" hostname="bef48ae51ba4" time="0.203">
+  <properties/>
+  <testcase name="test1Save" classname="com.app.server.service.LanguageTestCase" time="0.087"/>
+  <testcase name="test2Update" classname="com.app.server.service.LanguageTestCase" time="0.074"/>
+  <testcase name="test3FindById" classname="com.app.server.service.LanguageTestCase" time="0.009"/>
+  <testcase name="test4Delete" classname="com.app.server.service.LanguageTestCase" time="0.032"/>
+  <system-out><![CDATA[Setting logged in user info for ADD
+In around repository aspect
+[EL Fine]: sql: 2016-01-12 12:41:59.087--ClientSession(1586446491)--Connection(1728808874)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_Language_M (languageId, alpha2, alpha3, alpha4, alpha4parentid, language, languageDescription, languageIcon, languageType, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind => [700507BB-CC18-4A15-85BC-EA3BBC833AA4, 6z, 188, LygH, 5, JwjG4Rrvf3Wm37cN242qSyzlmXJpWu0hkss7uRRksiNUNSElLd, 7PsKoJL6Kbb8heQt2GkPWctatiCfTHW4SSIp4fMC2yF7CPmU0j, B2ciKh0Sh159QHwtASUscNJ1Kz3TW9K8cwWYysf7UhCaLtMbBa, wGyY6OcnoJ8yh3A83BIosTYflSTPWvaF, 1, AAAAA, 2016-01-12 12:41:59.076, null, 2016-01-12 12:41:59.076, 1, null]
+In around repository aspect
+[EL Fine]: sql: 2016-01-12 12:41:59.157--ClientSession(473097900)--Connection(1728808874)--Thread(Thread[Test worker,5,main])--SELECT languageId, alpha2, alpha3, alpha4, alpha4parentid, language, languageDescription, languageIcon, languageType, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Language_M WHERE ((activeStatus = ?) AND (languageId = ?))
+	bind => [1, 700507BB-CC18-4A15-85BC-EA3BBC833AA4]
+Setting logged in user info for UPDATE
+In around repository aspect
+[EL Fine]: sql: 2016-01-12 12:41:59.163--ClientSession(469296680)--Connection(1728808874)--Thread(Thread[Test worker,5,main])--SELECT languageId, alpha2, alpha3, alpha4, alpha4parentid, language, languageDescription, languageIcon, languageType, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Language_M WHERE (languageId = ?)
+	bind => [700507BB-CC18-4A15-85BC-EA3BBC833AA4]
+[EL Fine]: sql: 2016-01-12 12:41:59.166--ClientSession(469296680)--Connection(1728808874)--Thread(Thread[Test worker,5,main])--UPDATE ast_Language_M SET alpha2 = ?, alpha3 = ?, alpha4 = ?, language = ?, languageDescription = ?, languageIcon = ?, languageType = ?, updatedBy = ?, versionId = ? WHERE ((languageId = ?) AND (versionId = ?))
+	bind => [dv, 0j7, N8Pe, i0Zbayy50COj93rxDA3IRuP0i28ifsgVTPpcr61tIsic27RpkG, LuZytve6UQixHLz7lGyzs6ITojCH5VQUSchBuxqCwbP5UOCtDL, hSBRLiyXrfjcQmFdl2tZeV1dMiu1vMXgqKUU6xOPnSAhBWz7C9, OSXnISdN7PMFAexOQ5ExnXym3Ek2ry9N, AAAAA, 2, 700507BB-CC18-4A15-85BC-EA3BBC833AA4, 1]
+In around repository aspect
+[EL Fine]: sql: 2016-01-12 12:41:59.231--ClientSession(1570872841)--Connection(1728808874)--Thread(Thread[Test worker,5,main])--SELECT languageId, alpha2, alpha3, alpha4, alpha4parentid, language, languageDescription, languageIcon, languageType, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Language_M WHERE ((activeStatus = ?) AND (languageId = ?))
+	bind => [1, 700507BB-CC18-4A15-85BC-EA3BBC833AA4]
+In around repository aspect
+[EL Fine]: sql: 2016-01-12 12:41:59.239--ClientSession(1038607639)--Connection(1728808874)--Thread(Thread[Test worker,5,main])--SELECT languageId, alpha2, alpha3, alpha4, alpha4parentid, language, languageDescription, languageIcon, languageType, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Language_M WHERE (languageId = ?)
+	bind => [700507BB-CC18-4A15-85BC-EA3BBC833AA4]
+[EL Fine]: sql: 2016-01-12 12:41:59.241--ClientSession(1038607639)--Connection(1728808874)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_Language_M WHERE ((languageId = ?) AND (versionId = ?))
+	bind => [700507BB-CC18-4A15-85BC-EA3BBC833AA4, 2]
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

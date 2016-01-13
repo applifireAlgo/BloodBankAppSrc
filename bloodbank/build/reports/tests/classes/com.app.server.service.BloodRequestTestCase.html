@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class com.app.server.service.BloodRequestTestCase</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class com.app.server.service.BloodRequestTestCase</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/com.app.server.service.html">com.app.server.service</a> &gt; BloodRequestTestCase</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">5</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.293s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">test1Save</td>
+<td>0.146s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">test2Update</td>
+<td>0.041s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">test3FindById</td>
+<td>0.009s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">test3findBybloodGroup</td>
+<td>0.007s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">test4Delete</td>
+<td>0.090s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>In around repository aspect
+[EL Fine]: sql: 2016-01-12 12:41:59.49--ClientSession(227938535)--Connection(1728808874)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_BloodGroup_M (bloodGroupId, bloodGroup, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind =&gt; [E656B848-6A8D-444B-8A18-B3B6929F5E91, xksjYo7tPwmj8VLUHwI7eX16jAWtgmyFScIPmmzBq7MpoDoeWo, 1, AAAAA, 2016-01-12 12:41:59.486, null, 2016-01-12 12:41:59.486, 1, null]
+Setting logged in user info for ADD
+In around repository aspect
+[EL Fine]: sql: 2016-01-12 12:41:59.565--ClientSession(1694065742)--Connection(1728808874)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_BloodRequest_T (bloodRequestId, bloodGroup, dateNeededBy, dispatchedToPatientOnDT, noOfUnits, patientName, requestedByDoctor, requestedByHospital, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind =&gt; [443C878B-94B9-4F0C-82F7-1CBEC869885F, E656B848-6A8D-444B-8A18-B3B6929F5E91, 1970-01-02 10:17:36.789, 1970-01-02 10:17:36.789, 559, pBu0Enk6gqKjMBYKxhovCj1GM9nrJyQZPwImmlLeV1ckMprPEn, aPe7twmXqUDZB596b751sKHG5qwz3vD1yBTKPqcDNNpsj0Dh62, jcwQTto44w8wapZntALU72JAOOosnXKokoPFXikR6fcyxzNnQ2, 1, AAAAA, 2016-01-12 12:41:59.523, null, 2016-01-12 12:41:59.523, 1, null]
+In around repository aspect
+[EL Fine]: sql: 2016-01-12 12:41:59.619--ClientSession(1912342534)--Connection(1728808874)--Thread(Thread[Test worker,5,main])--SELECT bloodRequestId, bloodGroup, dateNeededBy, dispatchedToPatientOnDT, noOfUnits, patientName, requestedByDoctor, requestedByHospital, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_BloodRequest_T WHERE ((activeStatus = ?) AND (bloodRequestId = ?))
+	bind =&gt; [1, 443C878B-94B9-4F0C-82F7-1CBEC869885F]
+Setting logged in user info for UPDATE
+In around repository aspect
+[EL Fine]: sql: 2016-01-12 12:41:59.623--ClientSession(2110664379)--Connection(1728808874)--Thread(Thread[Test worker,5,main])--SELECT bloodRequestId, bloodGroup, dateNeededBy, dispatchedToPatientOnDT, noOfUnits, patientName, requestedByDoctor, requestedByHospital, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_BloodRequest_T WHERE (bloodRequestId = ?)
+	bind =&gt; [443C878B-94B9-4F0C-82F7-1CBEC869885F]
+[EL Fine]: sql: 2016-01-12 12:41:59.625--ClientSession(2110664379)--Connection(1728808874)--Thread(Thread[Test worker,5,main])--UPDATE ast_BloodRequest_T SET dateNeededBy = ?, dispatchedToPatientOnDT = ?, noOfUnits = ?, patientName = ?, requestedByDoctor = ?, requestedByHospital = ?, updatedBy = ?, versionId = ? WHERE ((bloodRequestId = ?) AND (versionId = ?))
+	bind =&gt; [1970-01-02 10:17:36.789, 1970-01-02 10:17:36.789, 978, vu2NL8SI8EeTpTqizkXiSDzVEAopAD6hTK3k8UVU0pUAMOrwcD, itCSmDINWK0ax4V3yqPa2MCrxCt7V3mGGZFy2Qa3uGUXr8ZoBX, MKufMSt06Qwinvh9MYXhy3CS4hGs3Z4B4XwNV7zhvPZoLFE7yA, AAAAA, 2, 443C878B-94B9-4F0C-82F7-1CBEC869885F, 1]
+In around repository aspect
+[EL Fine]: sql: 2016-01-12 12:41:59.663--ClientSession(1595761685)--Connection(1728808874)--Thread(Thread[Test worker,5,main])--SELECT bloodRequestId, bloodGroup, dateNeededBy, dispatchedToPatientOnDT, noOfUnits, patientName, requestedByDoctor, requestedByHospital, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_BloodRequest_T WHERE ((activeStatus = ?) AND (bloodRequestId = ?))
+	bind =&gt; [1, 443C878B-94B9-4F0C-82F7-1CBEC869885F]
+In around repository aspect
+[EL Fine]: sql: 2016-01-12 12:41:59.671--ClientSession(1315040069)--Connection(1728808874)--Thread(Thread[Test worker,5,main])--SELECT bloodRequestId, bloodGroup, dateNeededBy, dispatchedToPatientOnDT, noOfUnits, patientName, requestedByDoctor, requestedByHospital, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_BloodRequest_T WHERE ((activeStatus = ?) AND (bloodGroup = ?))
+	bind =&gt; [1, E656B848-6A8D-444B-8A18-B3B6929F5E91]
+In around repository aspect
+[EL Fine]: sql: 2016-01-12 12:41:59.679--ClientSession(1317499528)--Connection(1728808874)--Thread(Thread[Test worker,5,main])--SELECT bloodRequestId, bloodGroup, dateNeededBy, dispatchedToPatientOnDT, noOfUnits, patientName, requestedByDoctor, requestedByHospital, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_BloodRequest_T WHERE (bloodRequestId = ?)
+	bind =&gt; [443C878B-94B9-4F0C-82F7-1CBEC869885F]
+[EL Fine]: sql: 2016-01-12 12:41:59.681--ClientSession(1317499528)--Connection(1728808874)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_BloodRequest_T WHERE ((bloodRequestId = ?) AND (versionId = ?))
+	bind =&gt; [443C878B-94B9-4F0C-82F7-1CBEC869885F, 2]
+In around repository aspect
+[EL Fine]: sql: 2016-01-12 12:41:59.732--ClientSession(1504495746)--Connection(1728808874)--Thread(Thread[Test worker,5,main])--SELECT bloodGroupId, bloodGroup, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_BloodGroup_M WHERE (bloodGroupId = ?)
+	bind =&gt; [E656B848-6A8D-444B-8A18-B3B6929F5E91]
+[EL Fine]: sql: 2016-01-12 12:41:59.734--ClientSession(1504495746)--Connection(1728808874)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_BloodGroup_M WHERE ((bloodGroupId = ?) AND (versionId = ?))
+	bind =&gt; [E656B848-6A8D-444B-8A18-B3B6929F5E91, 1]
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 2.3</a> at Jan 12, 2016 12:42:01 PM</p>
+</div>
+</div>
+</body>
+</html>

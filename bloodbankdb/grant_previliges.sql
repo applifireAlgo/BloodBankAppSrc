@@ -1,0 +1,2 @@
+
+GRANT ALL PRIVILEGES  ON bloodbnk2.* TO 'bloodbnk2'@'%' IDENTIFIED BY 'bloodbnk2' WITH GRANT OPTION

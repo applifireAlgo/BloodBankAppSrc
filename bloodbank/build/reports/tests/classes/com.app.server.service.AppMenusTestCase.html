@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class com.app.server.service.AppMenusTestCase</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class com.app.server.service.AppMenusTestCase</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/com.app.server.service.html">com.app.server.service</a> &gt; AppMenusTestCase</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">4</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.166s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">test1Save</td>
+<td>0.086s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">test2Update</td>
+<td>0.039s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">test3FindById</td>
+<td>0.009s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">test4Delete</td>
+<td>0.032s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>Setting logged in user info for ADD
+In around repository aspect
+[EL Fine]: sql: 2016-01-12 12:41:56.591--ClientSession(2039896475)--Connection(1728808874)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_AppMenus_M (menuId, appId, appType, autoSave, menuAccessRights, menuAction, menuCommands, menuDisplay, menuHead, menuIcon, menuLabel, menuTreeId, RefObjectId, uiType, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind =&gt; [448965BF-FC56-49D8-A46F-AA3D158FACF0, 4c1cRG5SQR2lN1ge90ThtnPov2eu7f9368ACSP2IGDDjh4xDHI, 2, true, 7, zX494JYISGnpehULeZNMkJkUYkTQBqV3cn2aNPfRvObRHmrHR6, 3SARps69k6or7c0Ed2izIvONlWiVnARvXSSxRuUPOZcr6JCr2e, true, true, 1fM8AvJOMYaqVU098AsJ9yguBTELNyYg2x793mQC9SbLBY8ktn, GBwD7u29bwLvwVGHmJiVntuq9iscmzQlVXiEloxLD6sr5gXVNG, weHmogmlb9rd3zo39XvBuWsQZxvi2zgC0ObhDaJBD3tCL9tHqw, c9bDdc6tws9ZZ9fYbmXwHYJwPlGludST2pEG57XSH5oIm8J8FW, dBd, 1, AAAAA, 2016-01-12 12:41:56.572, null, 2016-01-12 12:41:56.572, 1, null]
+In around repository aspect
+[EL Fine]: sql: 2016-01-12 12:41:56.65--ClientSession(933599602)--Connection(1728808874)--Thread(Thread[Test worker,5,main])--SELECT menuId, appId, appType, autoSave, menuAccessRights, menuAction, menuCommands, menuDisplay, menuHead, menuIcon, menuLabel, menuTreeId, RefObjectId, uiType, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_AppMenus_M WHERE ((activeStatus = ?) AND (menuId = ?))
+	bind =&gt; [1, 448965BF-FC56-49D8-A46F-AA3D158FACF0]
+Setting logged in user info for UPDATE
+In around repository aspect
+[EL Fine]: sql: 2016-01-12 12:41:56.655--ClientSession(1955726138)--Connection(1728808874)--Thread(Thread[Test worker,5,main])--SELECT menuId, appId, appType, autoSave, menuAccessRights, menuAction, menuCommands, menuDisplay, menuHead, menuIcon, menuLabel, menuTreeId, RefObjectId, uiType, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_AppMenus_M WHERE (menuId = ?)
+	bind =&gt; [448965BF-FC56-49D8-A46F-AA3D158FACF0]
+[EL Fine]: sql: 2016-01-12 12:41:56.658--ClientSession(1955726138)--Connection(1728808874)--Thread(Thread[Test worker,5,main])--UPDATE ast_AppMenus_M SET appId = ?, appType = ?, menuAccessRights = ?, menuAction = ?, menuCommands = ?, menuIcon = ?, menuLabel = ?, menuTreeId = ?, RefObjectId = ?, uiType = ?, updatedBy = ?, versionId = ? WHERE ((menuId = ?) AND (versionId = ?))
+	bind =&gt; [hfjE6d74I0omR298M5bdYTO6R9tAq3lRuAvSmCXXeZOVC9w69C, 1, 4, sNOhJmtqxNIzYnf9ISfOfaglG06rw5ftnYINek4bH1AvgF4k8Z, eOjh2tLdUiCLZInExbtbXtgV37lwjGJhJm52jqhPLeQHrkThgv, qk8AWnijtyeRFfxuYrrTEOc02XfsryjhB8BVNk4jfdB0EUvZT6, ml2RAmWKsEG5bLc7mDcz9Y7yG9RVq33KIiaxWQz2b9GsS4915F, ok2Wnfd8D4JVRWRzPGhGuJmptHNMpsYi5sHpawGqRWbjYA5rO4, YA18HkRNQnghDAeAdWgWvTTch9EaAH5F0wfD6Y0xktMyysX6q9, PFn, AAAAA, 2, 448965BF-FC56-49D8-A46F-AA3D158FACF0, 1]
+In around repository aspect
+[EL Fine]: sql: 2016-01-12 12:41:56.69--ClientSession(2023925502)--Connection(1728808874)--Thread(Thread[Test worker,5,main])--SELECT menuId, appId, appType, autoSave, menuAccessRights, menuAction, menuCommands, menuDisplay, menuHead, menuIcon, menuLabel, menuTreeId, RefObjectId, uiType, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_AppMenus_M WHERE ((activeStatus = ?) AND (menuId = ?))
+	bind =&gt; [1, 448965BF-FC56-49D8-A46F-AA3D158FACF0]
+In around repository aspect
+[EL Fine]: sql: 2016-01-12 12:41:56.698--ClientSession(331768812)--Connection(1728808874)--Thread(Thread[Test worker,5,main])--SELECT menuId, appId, appType, autoSave, menuAccessRights, menuAction, menuCommands, menuDisplay, menuHead, menuIcon, menuLabel, menuTreeId, RefObjectId, uiType, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_AppMenus_M WHERE (menuId = ?)
+	bind =&gt; [448965BF-FC56-49D8-A46F-AA3D158FACF0]
+[EL Fine]: sql: 2016-01-12 12:41:56.701--ClientSession(331768812)--Connection(1728808874)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_AppMenus_M WHERE ((menuId = ?) AND (versionId = ?))
+	bind =&gt; [448965BF-FC56-49D8-A46F-AA3D158FACF0, 2]
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 2.3</a> at Jan 12, 2016 12:42:01 PM</p>
+</div>
+</div>
+</body>
+</html>
